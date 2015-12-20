@@ -1,5 +1,2 @@
 language: node_js
 node_js: "4"
-script: node_modules/jasmine-node/bin/jasmine-node tests/
-before_script:
-    - npm install

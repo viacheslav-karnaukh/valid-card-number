@@ -2,10 +2,16 @@
   "name": "valid-card-number",
   "version": "1.0.0",
   "description": "A tool for credit card number validation as well as IMEI of your mobile device validation (use *#06# on your phone to find out IMEI). Luhn algorithm was used for development of this tool.",
-  "main": "source/valid-card-number.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "author": "Viacheslav Karnaukh",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viacheslav-karnaukh/valid-card-number.git"
   },
+  "bugs": {
+    "url": "https://github.com/viacheslav-karnaukh/valid-card-number/issues"
+  },
+  "homepage": "https://github.com/viacheslav-karnaukh/valid-card-number#readme",
   "keywords": [
     "validation",
     "IMEI",
@@ -13,10 +19,11 @@
     "card",
     "bank"
   ],
-  "author": "Viacheslav Karnaukh",
-  "license": "MIT",
+  "main": "source/valid-card-number.js",
+  "scripts": {
+    "test": "jasmine-node tests"
+  },  
   "devDependencies": {
-    "jasmine-core": "^2.4.1",
     "jasmine-node": "^1.14.5"
   }
 }
