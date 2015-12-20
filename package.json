@@ -1,0 +1,23 @@
+{
+  "name": "valid-card-number",
+  "version": "1.0.0",
+  "description": "A tool for credit card number validation as well as IMEI of your mobile device validation (use *#06# on your phone to find out IMEI). Luhn algorithm was used for development of this tool.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "validation",
+    "IMEI",
+    "credit",
+    "card",
+    "bank"
+  ],
+  "author": "Viacheslav Karnaukh",
+  "license": "MIT",
+  "devDependencies": {
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.15",
+    "karma-jasmine": "^0.3.6"
+  }
+}
