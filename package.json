@@ -22,7 +22,7 @@
   "main": "source/valid-card-number.js",
   "scripts": {
     "test": "jasmine-node tests"
-  },  
+  },
   "devDependencies": {
     "jasmine-node": "^1.14.5"
   }
