@@ -1,8 +1,10 @@
 'use strict';
 
-describe('Validation of card numbers or IMEI according to Luhn algorithm.', () => {
+jasmine.getEnv().addReporter(new jasmine.ConsoleReporter(console.log));
 
-    describe('toDigits function converts strings of digits and numbers to array of digits.', () => {
+describe('Validation of card numbers or IMEI according to Luhn algorithm', () => {
+
+    describe('toDigits function converts strings of digits and numbers to array of digits', () => {
         let toDigits = require('../source/valid-card-number').toDigits;
         it('should convert string of digits to array of digits', () => {
             expect(toDigits('123')).toEqual([1,2,3]);
@@ -15,7 +17,7 @@ describe('Validation of card numbers or IMEI according to Luhn algorithm.', () =
         });
     });
 
-    describe('toDigitsRev function returns an array of digits of inputed parameter in reversed order.', () => {
+    describe('toDigitsRev function returns an array of digits of inputed parameter in reversed order', () => {
         let toDigitsRev = require('../source/valid-card-number').toDigitsRev;
         it('should return array', () => {
             expect(Array.isArray(toDigitsRev(''))).toBe(true);
@@ -25,7 +27,7 @@ describe('Validation of card numbers or IMEI according to Luhn algorithm.', () =
         });
     });
 
-    describe('doubleSecond function doubles every second number in the array of digits.', function() {
+    describe('doubleSecond function doubles every second number in the array of digits', function() {
         let doubleSecond = require('../source/valid-card-number').doubleSecond;
         it('should return array with doubled value of every second digit', () => {
             expect(doubleSecond([1,1,1,1,1,1])).toEqual([1,2,1,2,1,2]);
@@ -37,7 +39,7 @@ describe('Validation of card numbers or IMEI according to Luhn algorithm.', () =
         });
     });
 
-    describe('sumDigits function sums all digits of the array\'s numbers even if the number has two digits.', () => {
+    describe('sumDigits function sums all digits of the array\'s numbers even if the number has two digits', () => {
         let sumDigits = require('../source/valid-card-number').sumDigits;
         it('should sum all numbers in the array', function() {
             expect(sumDigits([1,2,3])).toBe(6);
@@ -49,7 +51,7 @@ describe('Validation of card numbers or IMEI according to Luhn algorithm.', () =
         });
     });
 
-    describe('isValid function validate card number or IMEI.', () => {
+    describe('isValid function validates card number or IMEI', () => {
         let isValid = require('../source/valid-card-number').isValid;
         let validNumbers =  [
                                 4716347184862961,
