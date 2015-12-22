@@ -6,7 +6,7 @@
 #### Installation:
 
 ```sh
-npm install
+npm install valid-card-number
 ```
 
 #### Example of usage:
